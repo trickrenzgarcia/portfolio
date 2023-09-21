@@ -1,3 +1,4 @@
+"use client"
 import Banner from '../partials/Banner';
 import Section_2 from './Section_2';
 

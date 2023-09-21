@@ -54,7 +54,7 @@ function Section_2() {
           Start learing Now!
         </a>
       </div>
-      <div className=" w-[50%] h-full hidden 1140:flex flex-row items-center  select-none justify-between ">
+      <div className=" w-[50%] h-full 1140:flex flex-row items-center  select-none justify-between ">
         <Image
           src="/mainIconsdark.svg"
           width={708}

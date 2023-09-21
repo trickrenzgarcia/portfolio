@@ -3,6 +3,7 @@ import './globals.css'
 import type { Metadata } from 'next'
 import { Inter } from 'next/font/google'
 import Navbar from '@/components/partials/Navbar'
+import StarsCanvas from '@/components/(StarMode)/Background_Stars'
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -19,6 +20,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={` bg-[#030014] overflow-y-scroll overflow-x-hidden  transition_ ${inter.className}`}>
+        <StarsCanvas />
         <Navbar />
         <ThemeProvider attribute='class' defaultTheme='dark' enableSystem>
           {children}
