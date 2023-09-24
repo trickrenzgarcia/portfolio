@@ -1,18 +1,9 @@
 'use client'
-import { useState, useEffect } from 'react';
 import Image from 'next/image'
 import Link from 'next/link'
 
-export default function Navbar(){
-  const [count, setCount] = useState<number>(0);
+export default function Navbar({ count } : { count: number | undefined }){
   
-  useEffect(() => {
-    const storedCount = localStorage.getItem("page_view");
-    const initialCount = Number(storedCount) || 0;
-    setCount(initialCount + 1);
-    localStorage.setItem("page_view", (initialCount + 1).toString());
-  }, [])
-
   return (
     <nav className='w-full h-[65px] flex fixed z-50 top-0 left-0 backdrop-blur-lg bg-opacity-40 shadow-sm'>
       <div className='w-full 1300:w-[1232px] h-full flex flex-row items-center justify-between 1140:justify-around 1300:justify-between m-auto px-[10px] 400:px-[20px] 500:px-[40px] 1140:p-0'>
